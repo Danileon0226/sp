@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Navbar.css';
+import css from'./Navbar.module.css';
 
 
 function Navbar() {
@@ -9,17 +9,18 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
-    return (
-        <nav className="navbar">
-            <button className="menu-toggle" onClick={toggleMenu}>
-                <span className="hamburger"></span>
+        return(
+        <nav className={css.navbar}>
+            <button className={css.menutoggle} onClick={toggleMenu}>
+                <span className={css.hamburger}></span>
             </button>
             <ul className={`menu ${isOpen ? 'open' : ''}`}>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Acerca de nosotros</a></li>
+                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
+
     );
 }
 

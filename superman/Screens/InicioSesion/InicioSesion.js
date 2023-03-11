@@ -5,7 +5,8 @@ function InicioSesion() {
         
         <div>
 
-            
+            <h1>Este es el inicio de Sesion</h1>
+
         </div>
 
         );
